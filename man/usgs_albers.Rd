@@ -2,7 +2,7 @@
 % Please edit documentation in R/shortcuts.R
 \name{usgs_albers}
 \alias{usgs_albers}
-\title{USGS Albers Equal Area Proejction proj.4 string}
+\title{USGS Albers Equal Area Projection proj.4 string}
 \usage{
 usgs_albers()
 }

@@ -25,11 +25,17 @@ usgs_albers <- function(){
   "+proj=aea +lat_1=29.5 +lat_2=45.5 +lat_0=37.5 +lon_0=-96 +x_0=0 +y_0=0 +ellps=GRS80 +datum=NAD83 +units=m +no_defs"
 }
 
-#' BC Albers Equal Area Projection proj.4 string for British Columbia
+#' BC Albers Equal Area Projection proj.4 string
 #' 
-#' Function that provides a proj.4 string
+#' Function that provides a proj.4 string for the BC Albers projection (EPSG code 3005).
+#'
+#' \href{http://epsg.io/3005}{BC Albers on epsg.io}
 #' 
 #' @export
 bc_albers <- function() {
-  "+proj=aea +lat_1=50 +lat_2=58.5 +lat_0=45 +lon_0=-126 +x_0=1000000 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs"
+  "+init=epsg:3005 +proj=aea +lat_1=50 +lat_2=58.5 +lat_0=45 +lon_0=-126 +x_0=1000000 +y_0=0 +datum=NAD83 +units=m +no_defs +ellps=GRS80 +towgs84=0,0,0"
 }
+
+#' @rdname bc_albers
+#' @export
+epsg_3005 <- bc_albers
